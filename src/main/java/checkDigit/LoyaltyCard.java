@@ -68,7 +68,10 @@ public class LoyaltyCard {
      * @return numero di carta senza il checkDigit
      */
     public String getCardNo() {
-        return cardNo;
+        if (cardNo.length() == 13) {
+            return cardNo.substring(0, cardNo.length()-1);
+        }
+        else return cardNo;
     }
 
     /**
@@ -76,6 +79,9 @@ public class LoyaltyCard {
      * @return numero di carta con il checkDigit
      */
     public String getFullCardNo() throws CheckDigitException {
+        if (cardNo.length() == 13 ) {
+            return cardNo;
+        }
         return cardNo + checkDigit();
     }
 
