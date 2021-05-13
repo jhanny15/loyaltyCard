@@ -1,0 +1,10 @@
+Test Suite
+
+1.a) Se il numero della carta inserito è una stringa vuota o un numero che non tiene 12 o 13 cifre,
+ritorna un CheckDigitException;
+
+1.b) Se il numero della carta inserito contiene una stringa con un carattere non numerico,
+checkDigit() ritorna NumberFormatException;
+
+2.) Se il numero della carta inserito contiene 12 o 13 cifre, checkDigit() confrotato con CheckDigit()
+ritorna true;
